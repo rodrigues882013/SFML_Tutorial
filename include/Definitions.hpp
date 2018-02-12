@@ -22,10 +22,16 @@ namespace game
         static constexpr const char* SPLASH_SCENE_BACKGROUND_FILEPATH = "../resources/res/splash_background.png";
         static constexpr const char* MAIN_MENU_BACKGROUND_FILEPATH = "../resources/res/main_menu_background.png";
         static constexpr const char* MAIN_MENU_TITLE_FILEPATH = "../resources/res/game_title.png";
+
+        static constexpr const char* GAME_BACKGROUND_FILEPATH = MAIN_MENU_BACKGROUND_FILEPATH;
+        static constexpr const char* PAUSE_BACKGROUND_FILEPATH = MAIN_MENU_BACKGROUND_FILEPATH;
+
         static constexpr const char* MAIN_MENU_PLAY_BUTTON = "../resources/res/play_button.png";
         static constexpr const char* MAIN_MENU_PLAY_BUTTON_OUTER = "../resources/res/play_button_outer.png";
-        static constexpr const char* GAME_BACKGROUND_FILEPATH = MAIN_MENU_BACKGROUND_FILEPATH;
         static constexpr const char* PAUSE_BUTTON = "../resources/res/pause_button.png";
+        static constexpr const char* RESUME_BUTTON = "../resources/res/resume_button.png";
+        static constexpr const char* HOME_BUTTON = "../resources/res/home_button.png";
+
         static constexpr const char* X_PIECE_FILEPATH = "../resources/res/x.png";
         static constexpr const char* O_PIECE_FILEPATH = "../resources/res/o.png";
         static constexpr const char* X_WINING_PIECE_FILEPATH = "../resources/res/x_win.png";

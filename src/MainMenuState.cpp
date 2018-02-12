@@ -1,5 +1,6 @@
 #include <sstream>
 #include <iostream>
+#include <utility>
 #include "../include/MainMenuState.hpp"
 #include "../include/Definitions.hpp"
 #include "../include/GameState.hpp"
@@ -9,7 +10,7 @@ namespace game
 {
 
     MainMenuState::MainMenuState(GameDataRef data) {
-        this->_data = data;
+        this->_data = std::move(data);
     }
 
     game::MainMenuState::~MainMenuState() {

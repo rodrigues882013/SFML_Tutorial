@@ -1,12 +1,14 @@
 #include <iostream>
+#include <utility>
 #include "../include/GameState.hpp"
 #include "../include/Definitions.hpp"
+#include "../include/PauseState.hpp"
 
 namespace game
 {
 
     GameState::GameState(GameDataRef data) {
-        this->_data = data;
+        this->_data = std::move(data);
     }
 
     GameState::~GameState() {
@@ -36,7 +38,7 @@ namespace game
 
             if(this->_data->inputs.is_sprite_clicked(this->_pause_button, sf::Mouse::Left, this->_data->window))
             {
-                std::cout << "Pause The Game" << std::endl;
+                this->_data->machine.add_state(StateRef(new PauseState(_data)), false);
             }
         }
     }

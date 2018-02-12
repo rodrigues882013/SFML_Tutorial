@@ -1,5 +1,6 @@
 #include <sstream>
 #include <iostream>
+#include <utility>
 #include "../include/MainMenuState.hpp"
 #include "../include/Definitions.hpp"
 #include "../include/SplashState.hpp"
@@ -7,7 +8,7 @@
 namespace game {
 
     SplashState::SplashState(GameDataRef data) {
-        this->_data = data;
+        this->_data = std::move(data);
     }
 
     SplashState::~SplashState() {
