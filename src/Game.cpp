@@ -1,7 +1,7 @@
 
 #include <SFML/Graphics.hpp>
-#include "header/SplashState.hpp"
-#include "header/Game.hpp"
+#include "../include/SplashState.hpp"
+#include "../include/Game.hpp"
 
 
 namespace game {

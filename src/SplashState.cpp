@@ -1,7 +1,8 @@
 #include <sstream>
 #include <iostream>
-#include "header/Definitions.hpp"
-#include "header/SplashState.hpp"
+#include "../include/MainMenuState.hpp"
+#include "../include/Definitions.hpp"
+#include "../include/SplashState.hpp"
 
 namespace game {
 
@@ -54,7 +55,7 @@ namespace game {
         if(this->_clock.getElapsedTime().asSeconds() > Constants::SPLASH_STATE_SHOW_TIME )
         {
             // Switch to main menu
-            std::cout << "Go to main menu" << std::endl;
+            this->_data->machine.add_state(StateRef(new MainMenuState(_data)), true);
         }
     }
 

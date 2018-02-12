@@ -2,7 +2,7 @@
 // Created by felipe on 11/02/18.
 //
 #include <SFML/Graphics.hpp>
-#include "header/AssetManager.hpp"
+#include "../include/AssetManager.hpp"
 
 namespace game
 {

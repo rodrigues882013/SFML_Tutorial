@@ -1,4 +1,6 @@
 cmake-build-debug/
 *.o
-.idea/
 *.iml
+
+.idea/
+build/

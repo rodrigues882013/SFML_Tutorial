@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.9)
 project(SFML_Tutorial)
 
 set(CMAKE_CXX_STANDARD 11)
-add_executable(SFML_Tutorial main.cpp header/Game.hpp Game.cpp header/State.hpp StateMachine.cpp header/StateMachine.hpp AssetManager.cpp header/AssetManager.hpp InputManager.cpp header/InputManager.hpp header/Definitions.hpp SplashState.cpp header/SplashState.hpp)
+add_executable(SFML_Tutorial src/main.cpp include/Game.hpp src/Game.cpp include/State.hpp src/StateMachine.cpp include/StateMachine.hpp src/AssetManager.cpp include/AssetManager.hpp src/InputManager.cpp include/InputManager.hpp include/Definitions.hpp src/SplashState.cpp include/SplashState.hpp src/MainMenuState.cpp include/MainMenuState.hpp)
 
 # SFML config
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")

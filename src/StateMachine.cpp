@@ -1,8 +1,4 @@
-//
-// Created by felipe on 11/02/18.
-//
-
-#include "header/StateMachine.hpp"
+#include "../include/StateMachine.hpp"
 
 namespace game
 {
