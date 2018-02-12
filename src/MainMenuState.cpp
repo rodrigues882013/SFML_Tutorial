@@ -2,6 +2,7 @@
 #include <iostream>
 #include "../include/MainMenuState.hpp"
 #include "../include/Definitions.hpp"
+#include "../include/GameState.hpp"
 
 
 namespace game
@@ -60,7 +61,7 @@ namespace game
 
             if(this->_data->inputs.is_sprite_clicked(this->_play_button, sf::Mouse::Left, this->_data->window))
             {
-                std::cout << "Go to Game Screen" << std::endl;
+                this->_data->machine.add_state(StateRef(new GameState(_data)), true);
             }
         }
     }
