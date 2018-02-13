@@ -64,7 +64,8 @@ namespace game
 
     }
 
-    void PauseState::draw(float dt) {
+    void PauseState::draw(float dt)
+    {
         this->_data->window.clear();
         this->_data->window.draw(this->_background);
         this->_data->window.draw(this->_resume_button);

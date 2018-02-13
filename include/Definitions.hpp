@@ -31,6 +31,8 @@ namespace game
         static constexpr const char* PAUSE_BUTTON = "../resources/res/pause_button.png";
         static constexpr const char* RESUME_BUTTON = "../resources/res/resume_button.png";
         static constexpr const char* HOME_BUTTON = "../resources/res/home_button.png";
+        static constexpr const char* RETRY_BUTTON = "../resources/res/retry_button.png";
+
 
         static constexpr const char* X_PIECE_FILEPATH = "../resources/res/x.png";
         static constexpr const char* O_PIECE_FILEPATH = "../resources/res/o.png";
