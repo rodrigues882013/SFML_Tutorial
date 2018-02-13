@@ -49,6 +49,7 @@ namespace game
         static const unsigned int STATE_AI_PLAYING = 93;
         static const unsigned int STATE_DRAW = 93;
 
+        static constexpr const char* GRID_SPRITE_FILE_PATH = "../resources/res/grid.png";
 
 
 

@@ -23,10 +23,19 @@ namespace game
 
 
     private:
+        void init_grid_piece();
+        void init_grid_array();
+        void load_texture();
+        void set_positions();
+
+
         GameDataRef _data;
         sf::Sprite _background;
         sf::Sprite _pause_button;
+        sf::Sprite _grid;
+        sf::Sprite _grid_pieces[3][3];
 
+        int grid_array[3][3];
         int turn;
         int game_state;
 

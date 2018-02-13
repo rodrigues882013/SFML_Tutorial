@@ -66,5 +66,4 @@ namespace game
 
         this->_data->window.display();
     }
-    }
 }
